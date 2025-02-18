@@ -12,8 +12,14 @@ private:
 	string zip
 public:
 	Address()
+		street gets "street"
+		city gets "city"
+		state gets "state"
+		zip gets "zip"
 	void init(street, city, state, zip)
 	void printAddress()
+		first line: street
+		second line: city, state, zip
 ```
 
 ## Date
@@ -25,8 +31,14 @@ private:
 	int year
 public:
 	Date()
+		month gets 0
+		int day gets 0
+		year gets 0
 	void init Date(dateString)
 	void printDate()
+		create array of month names - set 0 index to null
+		string month gets monthNames[month]
+		print month day, year
 ```
 
 ## Student
