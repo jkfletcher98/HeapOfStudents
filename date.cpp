@@ -8,7 +8,7 @@ Date::Date(){
 	int year = 0;
 } // end constructor
 
-void Date::init(dateString){
+void Date::init(std::string dateString){
 
 } //end init
 

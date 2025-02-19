@@ -1,11 +1,10 @@
 #include <iostream>
 #include "date.h"
 #include "address.h"
-#include "student.h"
 
 void testAddress();
-void testDate();
-void testStudent();
+//void testDate();
+//void testStudent();
 
 int main(){
 	std::cout << "Hello!" << std::endl;

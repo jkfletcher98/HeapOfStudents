@@ -1,7 +1,7 @@
-heapOfStudents: student.o address.o date.o main.o
-	g++ -g student.o address.o date.o main.o -o heapOfStudents
+heapOfStudents: address.o main.o
+	g++ -g address.o main.o -o heapOfStudents
 
-main.o: student.h address.h date.h main.cpp
+main.o: address.h main.cpp
 	g++ -c -g main.cpp
 
 address.o: address.h address.cpp
