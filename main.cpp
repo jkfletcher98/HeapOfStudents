@@ -1,5 +1,7 @@
 #include <iostream>
+#include "date."
 #include "address.h"
+#include "student.h"
 
 void testAddress();
 void testDate();
