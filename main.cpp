@@ -21,7 +21,7 @@ void testAddress(){
 	a.printAddress();
 } // end testAddress
 
-void testDate(){
+/*void testDate(){
 	Date d;
 	d.init("01/27/1997");
 	d.printDate();
@@ -36,3 +36,4 @@ void testStudent(){
 	std::cout << student->getFirstLast();
 	delete student;
 } // end testStudent
+*/
