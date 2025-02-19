@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 
 Date::Date(){
 	std::string dateString = "00/00/0000";
@@ -13,6 +14,10 @@ void Date::init(std::string dateString){
 	Date::month = month;
 	Date::day = day;
 	Date::year = year;
+
+	ss.clear();
+	ss.str("");
+
 } //end init
 
 void printDate(){
