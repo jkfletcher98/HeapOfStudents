@@ -18,6 +18,10 @@ void Date::init(std::string dateString){
 	ss.clear();
 	ss.str("");
 
+	getline(dateString, month, "/");
+	getline(dateString, day, "/");
+	getline(dateString, year, " ");
+
 } //end init
 
 void printDate(){
