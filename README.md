@@ -59,8 +59,19 @@ private:
 	int credit
 public:
 	Student()
+		initialize data
 	void init(studentString)
+		create temporary variables
+		set studentString to a stringstream
+		separate ss by commas and assign values to temporary varibles
+		push temporary varibles out to the correct variable
 	void printStudent()
+		print first name and last name
+		use printAddress
+		use printDate for birth date
+		use printDate for grad date
+		print "Credits: credit"
 	string getLastFirst()
+		print last name and first name
 	~Student()
 ```
