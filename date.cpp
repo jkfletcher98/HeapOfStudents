@@ -20,9 +20,10 @@ void Date::init(std::string dateString){
 	ss.clear();
 	ss.str("");
 
-	getline(dateString, tMonth, '/');
-	getline(dateString, tDay, '/');
-	getline(dateString, tYear);
+	ss.str(dateString);
+	getline(ss, tMonth, '/');
+	getline(ss, tDay, '/');
+	getline(ss, tYear);
 
 	ss.clear();
 	ss.str("");
@@ -32,7 +33,7 @@ void Date::init(std::string dateString){
 
 } //end init
 
-void printDate(){
+void Date::printDate(){
 	std::string monthNames[] = {"", "January", "February", "March", "April", 
 		"May", "June", "July", "August", "September", "October", "November", "December"};
 	std::cout << monthNames[Date::month]  << " " << Date::day << ", " << Date::year << std::endl;
