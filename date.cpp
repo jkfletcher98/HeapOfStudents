@@ -12,10 +12,6 @@ Date::Date(){
 
 void Date::init(std::string dateString){
 	Date::dateString = dateString;
-	Date::month = month;
-	Date::day = day;
-	Date::year = year;
-
 	std::stringstream ss;
 	std::string tDay;
 	std::string tMonth;
