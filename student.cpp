@@ -19,7 +19,7 @@ Student::Student(){
 } // end constructor
 
 void Student::init(std::string studentString){
-	Student::studentString = studenString;
+	Student::studentString = studentString;
 	std::stringstream ss;
 
 	std::string tFirst;
@@ -61,5 +61,10 @@ void Student::init(std::string studentString){
 } // end init
 
 void Student::printStudent(){
+	std::cout << Student::fName << " " << Student::lName << std::endl;
+	Address::printAddress();
+	birthDate::printDate();
+	gradDate::printDate();
+	std::cout << "Credits: " << Student::credit << std::endl;
 
 } // end printStudent
