@@ -12,8 +12,8 @@ Student::Student(){
 	std::string lName = "";
 
 	Address* address;
-	Date* birthDate = "00/00/0000";
-	Date* gradDate = "00/00/0000";
+	Date* birthDate;
+	Date* gradDate;
 
 	int credit = 0;
 } // end constructor
@@ -30,7 +30,7 @@ void Student::init(std::string studentString){
 	std::string tZip;
 	std::string tDateString1;
 	std::string tDateString2;
-	int tCredit;
+	std::string  tCredit;
 
 	ss.clear();
 	ss.str("");
