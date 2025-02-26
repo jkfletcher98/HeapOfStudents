@@ -26,7 +26,7 @@ void testDate(){
 	d.printDate();
 } // end testDate
 
-/*void testStudent(){
+void testStudent(){
 	std::string studentString = "Danielle,Johnson,32181 Johnson Course Apt. 389,New Jamesside,IN,58379,02/17/2004,05/15/2027,65";
 	Student* student = new Student();
 	student->init(studentString);
@@ -35,4 +35,4 @@ void testDate(){
 	std::cout << student->getFirstLast();
 	delete student;
 } // end testStudent
-*/
+
