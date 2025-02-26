@@ -54,17 +54,17 @@ void Student::init(std::string studentString){
 		tDateString1 << " " << tDateString2 << " " << 
 		tCredit;
 	ss >> Student::fName >> Student::lName >>
-		Address::street >> Address::city >> Address::state >> Address::zip >>
-		birthDate::dateString >> gradDate::dateString >>
+		address->street >> address->city >> address->state >> address->zip >>
+		birthDate->dateString >> gradDate->dateString >>
 		Student::credit;
 
 } // end init
 
 void Student::printStudent(){
 	std::cout << Student::fName << " " << Student::lName << std::endl;
-	Address::printAddress();
-	birthDate::printDate();
-	gradDate::printDate();
+	address->printAddress();
+	birthDate->printDate();
+	gradDate->printDate();
 	std::cout << "Credits: " << Student::credit << std::endl;
 
 } // end printStudent
