@@ -75,3 +75,34 @@ public:
 		print last name and first name
 	~Student()
 ```
+
+## main
+```
+set keepGoing to True
+Create while keep going loop
+
+"What would you like to do?
+0: quit
+1: print student names
+2: print student information
+3: search for  student (by last name)
+
+if 0
+	keepGoing is false
+	program ends
+if 1
+	printStudentNames
+	program continues
+if 2
+	printStudents
+	program continues
+if 3
+	ask for last name
+	findStudent
+	program continues
+
+printStudentNames
+
+printStudents
+
+findStudent
