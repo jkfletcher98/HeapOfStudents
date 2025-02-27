@@ -102,7 +102,11 @@ if 3
 	program continues
 
 printStudentNames
+	for each line in students.csv
+		print first name and last name
 
 printStudents
+	for each line in student.csv
+		printStudent
 
 findStudent
