@@ -18,6 +18,10 @@ Student::Student(){
 	int credit = 0;
 } // end constructor
 
+void Student::~Student(){
+	// not sure what this is supposed to do
+} // end destructor
+
 void Student::init(std::string studentString){
 	Student::studentString = studentString;
 	std::stringstream ss;
@@ -59,7 +63,6 @@ void Student::init(std::string studentString){
 		Student::credit;
 
 } // end init
-
 void Student::printStudent(){
 	std::cout << Student::fName << " " << Student::lName << std::endl;
 	address->printAddress();
@@ -68,3 +71,4 @@ void Student::printStudent(){
 	std::cout << "Credits: " << Student::credit << std::endl;
 
 } // end printStudent
+
