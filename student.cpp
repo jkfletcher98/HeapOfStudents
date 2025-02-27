@@ -18,8 +18,10 @@ Student::Student(){
 	int credit = 0;
 } // end constructor
 
-void Student::~Student(){
-	// not sure what this is supposed to do
+Student::~Student(){
+	delete address;
+	delete birthDate;
+	delete gradDate;
 } // end destructor
 
 void Student::init(std::string studentString){
@@ -53,16 +55,17 @@ void Student::init(std::string studentString){
 	ss.clear();
 	ss.str("");
 
-	ss << tFirst << " " << tLast << " " << 
-		tStreet << " " << tCity << " " << tState << " " << tZip << " " << 
-		tDateString1 << " " << tDateString2 << " " << 
-		tCredit;
-	ss >> Student::fName >> Student::lName >>
-		address->street >> address->city >> address->state >> address->zip >>
-		birthDate->dateString >> gradDate->dateString >>
-		Student::credit;
+	Student::lName = tLast;
+	Student::fName = tFirst;
+	Student::address->init(tStreet, tCity, tState, tZip);
+	Student::birthDate->init(tDateString1);
+	Student::gradDate->init(tDateString2);
+
+	ss << tCredit;
+	ss >> Student::credit;
 
 } // end init
+
 void Student::printStudent(){
 	std::cout << Student::fName << " " << Student::lName << std::endl;
 	address->printAddress();
